@@ -33,3 +33,9 @@ This app uses <strong>refresh-Token</strong> mechanism to refresh jsonwebtoken a
 
 ----------
  
+ Steps to run this project:
+ 
+ 1) Download zip or clone the repo.
+ 2) run npm i
+ 3) add `.env` file with the provided details
+ 4) npm start  
