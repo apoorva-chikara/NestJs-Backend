@@ -18,4 +18,10 @@ export class ArticleController {
         return await this.articleService.getAllArticles();
     }
 
+    @Post()
+    @HttpCode(HttpStatus.CREATED)
+    @UseGuards(AuthGuard('jwt'))
+    async createArticle(@Body() createArticleDto: CreateArticleDto) {
+        return await this.articleService.createArticle(createArticleDto);
+    }
 }
